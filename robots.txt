@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://apks.center/sitemap.xml

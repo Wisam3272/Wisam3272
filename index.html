@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>APKS Center &mdash; Premium APK Hub Site Builder</title>
+  <meta name="description" content="APKS Center helps you launch multilingual APK hub portals with AI-assisted generators, pro templates, SEO automation, and secure PayPal &amp; Visa payments." />
+  <meta name="keywords" content="APK hub builder, APK website generator, apks.center, multilingual APK templates, PayPal Visa payments" />
+  <meta property="og:title" content="APKS Center &mdash; Premium APK Hub Site Builder" />
+  <meta property="og:description" content="Generate, localize, and monetize professional APK hub experiences with built-in SEO, sitemap automation, and payment integrations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apks.center/" />
+  <meta property="og:image" content="https://apks.center/assets/preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="APKS Center" />
+  <meta name="twitter:description" content="Launch multilingual APK hub portals with AI." />
+  <link rel="canonical" href="https://apks.center/" />
+  <link rel="alternate" href="https://apks.center/" hreflang="x-default" />
+  <link rel="alternate" href="https://apks.center/en" hreflang="en" />
+  <link rel="alternate" href="https://apks.center/ar" hreflang="ar" />
+  <link rel="alternate" href="https://apks.center/es" hreflang="es" />
+  <link rel="alternate" href="https://apks.center/fr" hreflang="fr" />
+  <link rel="alternate" href="https://apks.center/de" hreflang="de" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "APKS Center",
+    "url": "https://apks.center/",
+    "logo": "https://apks.center/assets/logo.svg",
+    "sameAs": [
+      "https://twitter.com/apkscenter",
+      "https://facebook.com/apkscenter"
+    ],
+    "description": "APKS Center builds premium APK hub websites with multilingual templates, SEO automation, and integrated monetization."
+  }
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container">
+        <a href="#top" class="brand" aria-label="APKS Center">
+          <span class="brand__mark">⬢</span>
+          <span class="brand__text">APKS Center</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="primary-navigation" class="site-nav" aria-label="Primary" aria-expanded="false">
+          <ul>
+            <li><a data-i18n="navigation.features" href="#features"></a></li>
+            <li><a data-i18n="navigation.categories" href="#categories"></a></li>
+            <li><a data-i18n="navigation.generator" href="#generator"></a></li>
+            <li><a data-i18n="navigation.templates" href="#templates"></a></li>
+            <li><a data-i18n="navigation.pricing" href="#pricing"></a></li>
+            <li><a data-i18n="navigation.blog" href="#insights"></a></li>
+          </ul>
+          <div class="nav-actions">
+            <div class="language-switcher" aria-label="Language selector">
+              <button class="lang-btn" data-locale="en" aria-pressed="true">EN</button>
+              <button class="lang-btn" data-locale="ar">AR</button>
+              <button class="lang-btn" data-locale="es">ES</button>
+              <button class="lang-btn" data-locale="fr">FR</button>
+              <button class="lang-btn" data-locale="de">DE</button>
+            </div>
+            <a href="#generator" class="button button--primary" data-i18n="navigation.cta"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <span class="hero__badge" data-i18n="hero.badge"></span>
+            <h1 data-i18n="hero.title"></h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle"></p>
+            <div class="hero__actions">
+              <a href="#generator" class="button button--primary" data-i18n="hero.primary"></a>
+              <a href="#templates" class="button button--ghost" data-i18n="hero.secondary"></a>
+            </div>
+            <dl class="hero__metrics" id="metrics"></dl>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__card">
+              <div class="hero__card-header">
+                <span>apks.center</span>
+                <span class="status" data-i18n="hero.status"></span>
+              </div>
+              <div class="hero__card-body">
+                <p data-i18n="hero.preview"></p>
+                <ul id="hero-highlights"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <header class="section__header">
+            <h2 data-i18n="features.title"></h2>
+            <p data-i18n="features.subtitle"></p>
+          </header>
+          <div class="feature-grid" id="feature-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="categories">
+        <div class="container">
+          <header class="section__header">
+            <h2 data-i18n="categories.title"></h2>
+            <p data-i18n="categories.subtitle"></p>
+          </header>
+          <div class="category-tabs" id="category-tabs"></div>
+        </div>
+      </section>
+
+      <section class="section" id="generator">
+        <div class="container">
+          <header class="section__header">
+            <h2 data-i18n="generator.title"></h2>
+            <p data-i18n="generator.subtitle"></p>
+          </header>
+          <div class="generator__layout">
+            <form id="generator-form" class="card form">
+              <div class="form__row">
+                <label class="form__field">
+                  <span data-i18n="generator.form.hubName"></span>
+                  <input type="text" id="hubName" required />
+                </label>
+                <label class="form__field">
+                  <span data-i18n="generator.form.tagline"></span>
+                  <input type="text" id="tagline" required />
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__field">
+                  <span data-i18n="generator.form.tone"></span>
+                  <select id="tone"></select>
+                </label>
+                <label class="form__field">
+                  <span data-i18n="generator.form.locale"></span>
+                  <select id="baseLocale"></select>
+                </label>
+              </div>
+              <label class="form__field">
+                <span data-i18n="generator.form.categories"></span>
+                <input type="text" id="categories" />
+              </label>
+              <label class="form__field">
+                <span data-i18n="generator.form.apps"></span>
+                <textarea id="apps" rows="4"></textarea>
+              </label>
+              <label class="form__field">
+                <span data-i18n="generator.form.support"></span>
+                <input type="email" id="supportEmail" />
+              </label>
+              <label class="form__field">
+                <span data-i18n="generator.form.keywords"></span>
+                <input type="text" id="seoKeywords" />
+              </label>
+              <div class="form__actions">
+                <button type="submit" class="button button--primary" data-i18n="generator.form.submit"></button>
+                <button type="button" class="button button--ghost" id="downloadBtn" disabled data-i18n="generator.form.download"></button>
+              </div>
+            </form>
+            <div class="card preview">
+              <header class="preview__header">
+                <h3 data-i18n="generator.preview.title"></h3>
+                <button type="button" class="button button--ghost" id="previewLocale" data-i18n="generator.preview.switch"></button>
+              </header>
+              <iframe id="previewFrame" title="Generated APK hub preview"></iframe>
+              <p class="preview__hint" data-i18n="generator.preview.hint"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="templates">
+        <div class="container">
+          <header class="section__header">
+            <h2 data-i18n="templates.title"></h2>
+            <p data-i18n="templates.subtitle"></p>
+          </header>
+          <div class="template-gallery" id="template-gallery"></div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="container">
+          <header class="section__header">
+            <h2 data-i18n="pricing.title"></h2>
+            <p data-i18n="pricing.subtitle"></p>
+          </header>
+          <div class="pricing-grid">
+            <article class="card pricing-card" data-plan="starter">
+              <h3 data-i18n="pricing.starter.title"></h3>
+              <p class="pricing-card__price" data-i18n="pricing.starter.price"></p>
+              <ul class="pricing-card__features" data-i18n-list="pricing.starter.features"></ul>
+              <button class="button button--ghost" data-i18n="pricing.starter.cta"></button>
+            </article>
+            <article class="card pricing-card pricing-card--highlight" data-plan="growth">
+              <span class="pricing-card__badge" data-i18n="pricing.growth.badge"></span>
+              <h3 data-i18n="pricing.growth.title"></h3>
+              <p class="pricing-card__price" data-i18n="pricing.growth.price"></p>
+              <ul class="pricing-card__features" data-i18n-list="pricing.growth.features"></ul>
+              <button class="button button--primary" data-i18n="pricing.growth.cta"></button>
+            </article>
+            <article class="card pricing-card" data-plan="enterprise">
+              <h3 data-i18n="pricing.enterprise.title"></h3>
+              <p class="pricing-card__price" data-i18n="pricing.enterprise.price"></p>
+              <ul class="pricing-card__features" data-i18n-list="pricing.enterprise.features"></ul>
+              <button class="button button--ghost" data-i18n="pricing.enterprise.cta"></button>
+            </article>
+          </div>
+          <div class="payments">
+            <div class="payments__info">
+              <h3 data-i18n="payments.title"></h3>
+              <p data-i18n="payments.subtitle"></p>
+              <div class="payments__logos" aria-hidden="true">
+                <span>PayPal</span>
+                <span>Visa</span>
+                <span>Mastercard</span>
+              </div>
+              <button class="button button--ghost" id="paymentSettings" data-i18n="payments.settings"></button>
+            </div>
+            <div class="payments__actions">
+              <div id="paypal-button-container" class="paypal-buttons" aria-live="polite"></div>
+              <button class="button button--primary" id="visaCheckout" data-i18n="payments.visa"></button>
+              <p class="payments__notice" data-i18n="payments.notice"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="testimonials">
+        <div class="container">
+          <header class="section__header">
+            <h2 data-i18n="testimonials.title"></h2>
+            <p data-i18n="testimonials.subtitle"></p>
+          </header>
+          <div class="testimonial-grid" id="testimonial-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="insights">
+        <div class="container insights">
+          <div>
+            <h2 data-i18n="insights.title"></h2>
+            <p data-i18n="insights.subtitle"></p>
+            <ul class="insights__list" id="insights-list"></ul>
+          </div>
+          <aside class="card seo-card">
+            <h3 data-i18n="seo.title"></h3>
+            <p data-i18n="seo.subtitle"></p>
+            <ul id="seo-checklist" class="seo-card__list"></ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="cta">
+        <div class="container cta">
+          <div>
+            <h2 data-i18n="cta.title"></h2>
+            <p data-i18n="cta.subtitle"></p>
+          </div>
+          <a href="#generator" class="button button--primary" data-i18n="cta.cta"></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <a href="#top" class="brand brand--small">
+            <span class="brand__mark">⬢</span>
+            <span class="brand__text">APKS Center</span>
+          </a>
+          <p data-i18n="footer.tagline"></p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.products"></h4>
+          <ul id="footer-products"></ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.support"></h4>
+          <ul id="footer-support"></ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.legal"></h4>
+          <ul id="footer-legal"></ul>
+        </div>
+      </div>
+      <div class="container footer__meta">
+        <p id="footer-meta"></p>
+        <div class="footer__policies">
+          <a href="#" data-i18n="footer.privacy"></a>
+          <a href="#" data-i18n="footer.terms"></a>
+          <a href="sitemap.xml" target="_blank" rel="noopener" data-i18n="footer.sitemap"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal" id="paymentModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__panel" role="document">
+      <header class="modal__header">
+        <h3 data-i18n="payments.modal.title"></h3>
+        <button class="modal__close" type="button" aria-label="Close">&times;</button>
+      </header>
+      <form class="modal__form" id="paymentForm">
+        <label class="form__field">
+          <span data-i18n="payments.modal.paypal"></span>
+          <input type="text" id="paypalClientId" autocomplete="off" />
+        </label>
+        <label class="form__field">
+          <span data-i18n="payments.modal.visa"></span>
+          <input type="url" id="stripeLink" autocomplete="off" />
+        </label>
+        <p class="modal__hint" data-i18n="payments.modal.hint"></p>
+        <div class="modal__actions">
+          <button type="button" class="button button--ghost" data-i18n="payments.modal.cancel"></button>
+          <button type="submit" class="button button--primary" data-i18n="payments.modal.save"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="sr-only" id="translations-loaded" aria-live="polite"></div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
